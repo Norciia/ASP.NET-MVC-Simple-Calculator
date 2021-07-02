@@ -1,0 +1,75 @@
+﻿
+
+<section class="flex-grow-1 d-flex flex-column">
+
+    <h1 class="border-bottom py-2 text-center mt-3">Welcome in calculator app <span class="iconify" data-icon="bi:calculator" data-inline="false"></span></h1>
+
+
+     <div class="my-5">
+         <div class="form-group d-flex justify-content-center ">
+             <h3 style="color: darkcyan ">@Calculator.Controllers.CalculatorController.DisplayedNumber</h3>
+         </div>
+
+         <div class="form-group d-flex justify-content-center  ">
+             <form method="post" asp-action="ClearAll">
+                 <button type="submit" class="btn btn-outline-info m-1" style="width: 50px"><span class="iconify" data-icon="ls:c" data-inline="false"></span></button>
+             </form>
+             <form method="post" asp-action="PlusMinus">
+                 <button type="submit" class="btn btn-outline-info m-1" style="width: 50px"><span class="iconify" data-icon="ic:baseline-plus-minus-alt" data-inline="false"></span></button>
+             </form>
+             <form method="post" asp-action="Percentage">
+                 <button type="submit" class="btn btn-outline-info m-1" style="width: 50px"><span class="iconify" data-icon="ic:round-percentage" data-inline="false"></span></button>
+             </form>
+             <form method="post" asp-action="SetOperation">
+                 <button type="submit" name="OperationName" value="Division" class="btn btn-outline-info m-1" style="width: 50px"><span class="iconify" data-icon="mdi:division" data-inline="false"></span></button>
+             </form>
+         </div>
+
+         <div class="form-group d-flex justify-content-center ">
+             <form method="post" asp-action="SetNumber" class="d-flex  align-items-center ">
+                 <input value="7" class="form-control" type="submit" name="Number"  style="width: 55px" />
+                 <input value="8" class="form-control" type="submit" name="Number"  style="width: 55px" />
+                 <input value="9" class="form-control" type="submit" name="Number"  style="width: 55px" />
+             </form>
+             <form method="post" asp-action="SetOperation">
+                 <button value="Multiplication" type="submit" name="OperationName" class="btn btn-outline-info m-1" style="width: 55px"><span class="iconify" data-icon="emojione-monotone:cross-mark" data-inline="false"></span></button>
+             </form>
+         </div>
+
+         <div class="form-group d-flex justify-content-center ">
+             <form method="post" asp-action="SetNumber" class="d-flex  align-items-center ">
+                 <input class="form-control" type="submit" name="Number" value="4" style="width: 55px" />
+                 <input class="form-control" type="submit" name="Number" value="5" style="width: 55px" />
+                 <input class="form-control" type="submit" name="Number" value="6" style="width: 55px" />
+             </form>
+
+             <form method="post" asp-action="SetOperation">
+                 <button type="submit" name="OperationName" value="Substraction" class="btn btn-outline-info m-1" style="width: 55px"><span class="iconify" data-icon="subway:subtraction-1" data-inline="false"></span></button>
+             </form>
+         </div>
+
+         <div class="form-group d-flex justify-content-center ">
+             <form method="post" asp-action="SetNumber" class="d-flex  align-items-center ">
+                 <input class="form-control" type="submit" name="Number" value="1" style="width: 55px" />
+                 <input class="form-control" type="submit" name="Number" value="2" style="width: 55px" />
+                 <input class="form-control" type="submit" name="Number" value="3" style="width: 55px" />
+             </form>
+             <form method="post" asp-action="SetOperation">
+                 <button type="submit" name="OperationName" value="Add" class="btn btn-outline-info m-1" style="width: 55px"><span class="iconify" data-icon="fluent:add-12-filled" data-inline="false"></span></button>
+             </form>
+         </div>
+
+         <div class="form-group d-flex justify-content-center ">
+             <form method="post" asp-action="SetNumber" class="d-flex  align-items-center ">
+                 <input class="form-control" type="submit" name="Number" value="0" style="width: 110px" />
+             </form>
+             <form method="post" asp-action="ToFloat">
+                 <button type="submit" class="btn btn-outline-info m-1" style="width: 50px"><span class="iconify" data-icon="bi:dot" data-inline="false"></span></button>
+             </form>
+             <form method="post" asp-action="Submit">
+                 <button type="submit" class="btn btn-outline-info m-1" style="width: 55px"><span class="iconify" data-icon="fa-solid:equals" data-inline="false"></span></button>
+             </form>
+         </div>
+     </div>
+
+</section>
